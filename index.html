@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMart - Your Ultimate Computer Hardware Destination</title>
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+   <!-- Navigation Bar -->
+    <!--   nav>div.logo>h1{TechMart}+button.hamburger#hamburger[aria-label="Toogle navigation" aria-expanded="false"]>span*3^ul#nav-menu>li*5>a^button#theme-toggle[aria-label="Toogle dark mode"]{🌙} -->
+   <nav>
+    <!-- Logo -->
+    <div class="logo">
+        <h1>TechMart</h1>
+    </div>
+    <!-- Hamburger Icon: Hidden on desktop, shown on mobile -->
+    <button class="hamburger" id="hamburger" type="button"  aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Navigation Menu -->
+    <ul id="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#featured">Products</a></li>
+      <li><a href="#new-product">New</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <button type="button" id="theme-toggle" aria-label="Toggle dark mode">
+        🌙
+      </button>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <!-- Product cards: -->
+  <!-- main>header.hero>h1^section.featured-products#featured>h2+div.scroll-buttons>button#scroll-left+button#scroll-right^div.product-grid-wrapper>div.product-grid>article*10.product-card>img+div.card-content>h3+p -->
+  <main>
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1>TechMart - Premium Computer Hardware</h1>
+    </header>
+
+    <!-- Featured Products Section (Arrow Scroll) -->
+    <section class="featured-products" id="featured">
+      <h2>Featured Products</h2>
+      <div class="scroll-buttons">
+        <button id="scroll-left" type="button">&#8249;</button>
+        <button id="scroll-right" type="button">&#8250;</button>
+      </div>
+      <div class="product-grid-wrapper">
+        <div class="product-grid">
+          <!-- Repeat the product cards here -->
+          <article class="product-card">
+            <img src="images/cpu.jpg" alt="High performance CPU" />
+            <div class="card-content">
+              <h3>HyperCore CPU</h3>
+              <p>
+                Experience blazing-fast processing speeds with our latest
+                HyperCore series CPU.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/gpu.jpg" alt="High quality GPU" />
+            <div class="card-content">
+              <h3>GigaForce GPU</h3>
+              <p>
+                Elevate your gaming and design experience with
+                graphics performance.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/ssd.jpg" alt="Reliable SSD storage" />
+            <div class="card-content">
+              <h3>UltraStorage SSD</h3>
+              <p>
+                Store your data with maximum efficiency and reliability with our
+                latest SSD solutions.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              src="images/motherboard.jpg"
+              alt="High precision motherboard"
+            />
+            <div class="card-content">
+              <h3>ProBoard X</h3>
+              <p>
+                Enjoy smooth performance and stability
+                for all your computing needs.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/nvme.jpg" alt="High-speed NVMe storage" />
+            <div class="card-content">
+              <h3>QuantumDrive NVMe</h3>
+              <p>
+                Ultra-fast storage designed to boost your system’s read/write
+                speed to the next level.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/fan.jpg" alt="High performance cooling fan" />
+            <div class="card-content">
+              <h3>FusionCool Fan</h3>
+              <p>
+                Keep your system running cool under pressure with our technology.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/cpu.jpg" alt="High performance CPU" />
+            <div class="card-content">
+              <h3>HyperCore CPU</h3>
+              <p>
+                Experience blazing-fast processing speeds with our latest
+                HyperCore series CPU.
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/gpu.jpg" alt="High quality GPU" />
+            <div class="card-content">
+              <h3>GigaForce GPU</h3>
+              <p>
+                Elevate your gaming and design experience with unparalleled
+                graphics performance.
+              </p>
+            </div>
+          </article>  
+          <article class="product-card">
+            <img src="images/Electrical-wires.jpg" alt="Electrical-wires" />
+            <div class="card-content">
+              <h3>Electrical-wires</h3>
+              <p>
+                Electrical wiring is an electrical installation of cabling and associated devices such as switches, sockets, etc..
+              </p>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="images/pc-cable.jpg" alt="power cord, or a connector" />
+            <div class="card-content">
+              <h3>PC-Cable</h3>
+              <p>
+                A power cord, or a connector, is a cable containing one or more wires which are covered in a plastic.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Product Section -->
+      <!-- section.new-product#new-product>h2+div.product-highlight>div.product-image>img^div.product-info>h3+p+button.buy-btn -->
+    <section class="new-product" id="new-product">
+      <h2>Introducing the NovaBlade X1</h2>
+      <div class="product-highlight">
+        <div class="product-image">
+          <img src="images/laptop.jpg" alt="NovaBlade X1 - Cutting Edge Laptop" />
+        </div>
+        <div class="product-info">
+          <h3>NovaBlade X1 Laptop</h3>
+          <p>
+            Discover the future of computing with the NovaBlade X1, built to deliver unmatched performance with a sleek design, powerful internals, and long-lasting battery life. Perfect for both professionals and gamers.
+          </p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- section.gallery#gallery>h2+div.auto-scroll-gallery>div.gallery-track>img*8 -->
+    <section class="gallery" id="gallery">
+      <h2>Hardware Gallery</h2>
+      <div class="auto-scroll-gallery">
+        <div class="gallery-track">
+          <img src="images/motherboard.jpg" alt="Motherboard" />
+          <img src="images/nvme.jpg" alt="NVMe drive" />
+          <img src="images/fan.jpg" alt="Cooling System" />
+          <img src="images/psu.jpg" alt="Power Supply" />
+          <img src="images/ssd.jpg" alt="SSD Drive" />
+          <img src="images/gpu.jpg" alt="Graphics Card" />
+          <img src="images/Electrical-wires.jpg" alt="Cooling System" />
+          <img src="images/pc-cable.jpg" alt="Cooling System" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- section.contact#contact>h2+div.contact-form>form#contactForm[action="#" method="post"]>label+input:text[placeholder="Your name"]+label+input:email[placeholder="Your email"]+label+input:text[placeholder="Subject"]+label+textarea[placeholder="Your message here"]+button:submit{Send Message} -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your Message Here..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dialog for Contact Form Submission -->
+  <dialog id="contactDialog">
+    <h3>Thank You!</h3>
+    <p>Your message has been successfully sent. We will get back to you shortly.</p>
+    <button class="dialog-btn" id="closeDialog">Close</button>
+  </dialog>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TechMart. All rights reserved.</p>
+  </footer>
+
+  </body>
+</html>
